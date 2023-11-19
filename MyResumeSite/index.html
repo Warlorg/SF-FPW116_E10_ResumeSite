@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Online Responsive Resume</title>
+    <meta name="author" content="Dmitri Polotnianshchikov">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="HandheldFriendly" content="true">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Simonetta:400,900|Balthazar">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" type="text/css" href="responsive.css">
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+</head>
+<body>
+    <div id="w" itemscope itemtype="https://schema.org/Person">
+        <header class="clearfix">
+            <div id="info">
+                <h1><span itemprop="name">Полотнянщиков Дмитрий</span></h1>
+                <h3><span itemprop="jobTitle">Fullstack разработчик на Python</span></h3>
+                <small itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+                    <span itemprop="addressLocality">Усть-Лабинск</span>,
+                    <span itemprop="addressRegion">Краснодарский край</span>,
+                    <span itemprop="addressCountry">Российская Федерация</span>
+                </small>
+                <small><span itemprop="email"><i class="fa fa-envelope" aria-hidden="true"></i> warlorg.d@gmail.com</span></small>
+                <small><a href="https://github.com/Warlorg" itemprop="url">
+                    <i class="fa fa-github" aria-hidden="true"></i> Мое портфолио</a> &bull;
+                    <a href="https://vk.com/your-vk" itemprop="url">
+                        <i class="fa fa-vk" aria-hidden="true"></i> @dmitri</a></small>
+            </div>
+            <div id="photo">
+                <img src="images/istockphoto-1278978817-612x612.jpg" alt="Dmitri resume photo avatar" itemprop="image"/>
+            </div>
+        </header>
+
+        <section id="About me">
+            <h2>Обо мне</h2>
+            <p itemprop="description">
+                Мне 43 года и в данный момент я активно осваиваю новую для себя сферу программирования и веб-разработки,
+                а именно бэкэнд и фронтэнд разработку сайтов с использованием языков Python, Html и JavaScript.</p>
+            <p> Уже почти год как я обучаюсь в онлайн-школе <a href="https://skillfactory.ru/">Skillfactory</a>,
+                которая дала мне возможность познакомиться с удивительным миром веб-технологий, включающим в себя
+                фреймворк <a href="https://www.djangoproject.com/">Django</a>, приложения для разработки
+                <a href="https://www.jetbrains.com/ru-ru/pycharm/">PyCharm</a> и
+                <a href="https://www.jetbrains.com/ru-ru/webstorm/">WebStorm</a>, платформу для контейнеризации
+                приложений <a href="https://www.docker.com/products/docker-desktop/">Docker Desktop</a>, приложение для
+                работы с базами данных <a href="https://dbeaver.io/">DBeaver</a> и многое-многое другое. За что
+                коллективу школы хочется выразить большую благодарность - вы лучшие!!!
+            </p>
+        </section>
+        <button type="button" class="collapsible" title="Щелкните, чтобы открыть" itemprop="name">Навыки</button>
+        <section class="grid-wrapper-skills" itemscope itemtype="https://schema.org/ItemList">
+            <section id="grid-wrapper-skills-left">
+                <h4 itemprop="about">Разработка</h4>
+                <ul>
+                    <li class="skills-left-item-1" itemprop="itemListElement">HTML5/CSS3</li>
+                    <li class="skills-left-item-2" itemprop="itemListElement">JavaScript</li>
+                    <li class="skills-left-item-3" itemprop="itemListElement">PHP Backend</li>
+                    <li class="skills-left-item-4" itemprop="itemListElement">Python</li>
+                    <li class="skills-left-item-5" itemprop="itemListElement">Django</li>
+                </ul>
+            </section>
+            <section id="grid-wrapper-skills-right">
+                <h4 itemprop="about">Программное обеспечение</h4>
+                <ul>
+                    <li class="skills-right-item-1" itemprop="itemListElement">Django Web Framework</li>
+                    <li class="skills-right-item-2" itemprop="itemListElement">PyCharm</li>
+                    <li class="skills-right-item-3" itemprop="itemListElement">WebStorm</li>
+                    <li class="skills-right-item-4" itemprop="itemListElement">Docker Desktop</li>
+                    <li class="skills-right-item-5" itemprop="itemListElement">MS Office 2007-2010</li>
+                </ul>
+            </section>
+        </section>
+    </div>
+    <script>
+        let btn = document.getElementsByClassName("collapsible");
+
+        btn[0].addEventListener("click", function () {
+            this.classList.toggle("active");
+            let content = this.nextElementSibling;
+            if (content.style.display === "grid") {
+                content.style.display = "none";
+            } else {
+                content.style.display = "grid";
+            }
+        });
+    </script>
+</body>
+</html>

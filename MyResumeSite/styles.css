@@ -1,0 +1,204 @@
+* { margin: 0; padding: 0; }
+html { height: 101%; }
+body {
+    background: #f2f2f2 url('images/bg-tile.png');
+    font-size: 62.5%;
+    padding-bottom: 65px;
+}
+h1 {
+    font-family: "Simonetta", "Trebuchet MS", Arial, sans-serif;
+    color: #454545;
+    font-size: 3.6em;
+    margin-bottom: 6px;
+}
+h2 {
+    font-family: "Simonetta", "Trebuchet MS", Arial, sans-serif;
+    color: #484848;
+    font-size: 2.5em;
+    margin-bottom: 10px;
+    text-decoration: underline;
+    background-color: #dbe1e1;
+    padding: 18px;
+    width: 95%;
+    border: none;
+    text-align: left;
+    outline: none;
+    border-radius: 10px;
+}
+h3 {
+    font-family: "Trebuchet MS", Verdana, Arial, sans-serif;
+    color: #212020;
+    font-weight: normal;
+    font-size: 1.8em;
+    margin-bottom: 10px;
+}
+h4 {
+    font-family: "Trebuchet MS", Verdana, Arial, sans-serif;
+    color: #656565;
+    font-weight: bold;
+    font-size: 1.75em;
+    margin-bottom: 4px;
+}
+p {
+    font-family: "Balthazar", "Droid Serif", Times New Roman, serif;
+    color: #565656;
+    font-size: 1.8em;
+    line-height: 1.4em;
+    margin-bottom: 15px;
+    padding-left: 35px;
+    text-indent: 30px;
+}
+small {
+    font-family: "Balthazar", serif;
+    color: #656565;
+    font-size: 1.6em;
+    display: block;
+    margin-bottom: 6px;
+}
+ul {
+    display: block;
+    list-style: none;
+}
+ul li {
+    padding-left: 45px;
+    list-style-type: none;
+    vertical-align: top;
+    background: url('images/bullet.png') 25px 5px no-repeat;
+    margin-bottom: 5px;
+    font-family: "Balthazar", serif;
+    color: #090808;
+    font-size: 1.6em;
+    line-height: 2.3em;
+}
+img {
+    border: 0;
+    max-width: 100%;
+}
+a {
+    color: rgb(9, 74, 203);
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+/** @group core layout **/
+#w {
+    margin: 0px 50px;
+    padding: 35px 40px 20px;
+    background: #fff;
+    min-width: 260px;
+    max-width: 900px;
+    border-bottom-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+    -webkit-border-bottom-left-radius: 8px;
+    -webkit-border-bottom-right-radius: 8px;
+    -moz-border-radius-bottomleft: 8px;
+    -moz-border-radius-bottomright: 8px;
+}
+header {
+    width: 100%;
+}
+/** @group personal settings **/
+#info {
+    float: left;
+    margin-bottom: 12px;
+}
+#photo {
+    float: right;
+}
+#photo img {
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 5px;
+    height: 300px;
+    width: 250px;
+}
+.collapsible {
+    font-family: "Simonetta", "Trebuchet MS", Arial, sans-serif;
+    color: #363636;
+    font-size: 2.5em;
+    margin-bottom: 10px;
+    text-decoration: underline;
+    background-color: #dbe1e1;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    border-radius: 10px;
+}
+.active, .collapsible:hover {
+    background-color: #ccc;
+}
+.grid-wrapper-skills {
+    display: none;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-rows: auto;
+    grid-gap: 2vw;
+    overflow: hidden;
+}
+.skills-left-item-1 {
+    background-color: rgb(243, 86, 86);
+    border-radius: 10px;
+}
+.skills-left-item-2 {
+    background-color: rgb(243, 188, 86);
+    border-radius: 10px;
+}
+.skills-left-item-3 {
+    background-color: rgb(96, 243, 86);
+    border-radius: 10px;
+}
+.skills-left-item-4 {
+    background-color: rgb(66, 127, 238);
+    border-radius: 10px;
+}
+.skills-left-item-5 {
+    background-color: rgb(215, 120, 40);
+    border-radius: 10px;
+}
+.skills-right-item-1 {
+    background-color: rgb(86, 243, 225);
+    border-radius: 10px;
+}
+.skills-right-item-2 {
+    background-color: rgb(144, 86, 243);
+    border-radius: 10px;
+}
+.skills-right-item-3 {
+    background-color: rgb(143, 121, 121);
+    border-radius: 10px;
+}
+.skills-right-item-4 {
+    background-color: rgb(243, 86, 222);
+    border-radius: 10px;
+}
+.skills-right-item-5 {
+    background-color: rgb(218, 113, 93);
+    border-radius: 10px;
+}
+/** @group clearfix **/
+.clearfix:after {
+    content: ".";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    line-height: 0;
+    height: 0;
+}
+.clearfix {
+    display: inline-block;
+}
+html[xmlns] .clearfix {
+    display: block;
+}
+* html .clearfix {
+    height: 1%;
+}
